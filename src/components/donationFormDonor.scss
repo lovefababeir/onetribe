@@ -1,0 +1,10 @@
+@import "../styles/fonts.scss";
+@import "../styles/mixins.scss";
+@import "../styles/variables.scss";
+
+.donorInfo {
+  @include flex(row, space-between, center, wrap);
+  & > span {
+    width: 45%;
+  }
+}

@@ -1,0 +1,28 @@
+@import "../styles/fonts.scss";
+@import "../styles/mixins.scss";
+@import "../styles/variables.scss";
+
+.footer {
+  position: fixed;
+  @include flex(row, center, center);
+  width: 100%;
+  height: $footer;
+  z-index: 2;
+  bottom: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #140d19;
+  &__copyright {
+    font-size: 1.2rem;
+    text-align: center;
+    color: white;
+    @include surface {
+      font-size: 1.3rem;
+    }
+  }
+  &__link {
+    text-decoration: none;
+    color: white;
+  }
+}

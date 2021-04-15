@@ -1,0 +1,17 @@
+//font-family: "Montserrat", Arial, Helvetica, sans-serif;
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@200;300;400;500;600;700&display=swap");
+
+//font-family: 'Spectral SC', serif;
+@import url("https://fonts.googleapis.com/css2?family=Spectral+SC:wght@200;300;400;500;600;700&display=swap");
+
+// font-family: 'Bangers', cursive;
+@import url("https://fonts.googleapis.com/css2?family=Bangers&display=swap");
+
+@mixin yellow-bangers {
+  color: $yellow;
+  font-family: "Bangers", cursive;
+}
+@mixin red-bangers {
+  color: $red;
+  font-family: "Bangers", cursive;
+}

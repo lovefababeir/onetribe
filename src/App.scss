@@ -1,0 +1,51 @@
+@import "./styles/fonts.scss";
+@import "./styles/mixins.scss";
+@import "./styles/variables.scss";
+
+*,
+*:before,
+*:after {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+	color: black;
+}
+
+html,
+body {
+	overflow-x: hidden;
+	scroll-behavior: smooth;
+	margin: 0;
+	width: 100%;
+	font-size: 62.5%;
+	font-family: "Montserrat", Arial, Helvetica, sans-serif;
+}
+
+a {
+	text-decoration: none;
+}
+
+.button {
+	@include flex(row, center, center);
+	height: 2.5rem;
+	margin: 1rem 0.3rem;
+	padding: 0 0.3rem;
+	border-radius: 3px;
+	border: solid 1px rgba(113, 88, 61, 1);
+	box-shadow: 1px 1px 3px 1px rgb(75, 75, 75);
+	background: rgb(201, 175, 135);
+	background: radial-gradient(
+		circle,
+		rgba(201, 175, 135, 1) 0%,
+		rgba(113, 88, 61, 1) 68%
+	);
+	font-size: 1.2rem;
+	cursor: pointer;
+	color: $blue;
+	@include surface {
+		height: 2.5rem;
+		@include tablet {
+			font-size: 1.5rem;
+		}
+	}
+}

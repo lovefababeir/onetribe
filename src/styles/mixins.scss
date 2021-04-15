@@ -1,0 +1,93 @@
+@import "./variables.scss";
+
+@mixin mobile {
+  @media screen and (min-width: $mobile) {
+    @content;
+  }
+}
+
+@mixin surface {
+  @media screen and (min-width: $surface) {
+    @content;
+  }
+}
+
+@mixin tablet {
+  @media screen and (min-width: $tablet) {
+    @content;
+  }
+}
+
+@mixin desktop {
+  @media screen and (min-width: $desktop) {
+    @content;
+  }
+}
+
+@mixin breakpoint($width) {
+  @media screen and (min-width: $width) {
+    @content;
+  }
+}
+
+@mixin position($position, $top, $left) {
+  position: $position;
+  top: $top;
+  left: $left;
+}
+
+@mixin flex($direction, $justify, $align, $wrap: nowrap) {
+  display: flex;
+  flex-direction: $direction;
+  justify-content: $justify;
+  align-items: $align;
+  flex-wrap: $wrap;
+}
+
+@mixin fadeIn($style: ease-in-out, $time: 0.5s) {
+  animation: fadeIn $style $time;
+  @keyframes fadeIn {
+    0% {
+      opacity: 0;
+    }
+    40% {
+      opacity: 0;
+    }
+    70% {
+      opacity: 0.5;
+    }
+    100% {
+      opacity: 1;
+    }
+  }
+}
+
+@mixin moveRight($distance, $style: ease-in-out, $duration: 2s) {
+  animation: moveRight $style $duration;
+  position: relative;
+  @keyframes moveRight {
+    0% {
+      right: $distance;
+      opacity: 0;
+    }
+    100% {
+      right: 0px;
+      opacity: 1;
+    }
+  }
+}
+
+@mixin moveLeft($distance, $style: ease-in-out, $duration: 2s) {
+  animation: moveLeft $style $duration;
+  position: relative;
+  @keyframes moveLeft {
+    0% {
+      left: $distance;
+      opacity: 0;
+    }
+    100% {
+      left: 0px;
+      opacity: 1;
+    }
+  }
+}

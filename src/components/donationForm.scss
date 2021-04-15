@@ -1,0 +1,90 @@
+@import "../styles/fonts.scss";
+@import "../styles/mixins.scss";
+@import "../styles/variables.scss";
+
+.donation-form {
+  width: 100%;
+  @include flex(column, center, center);
+  border-top: solid 1px #4d4d4d;
+  @include tablet {
+    border-right: solid 1px #4d4d4d;
+    border-top: none;
+  }
+  &__title {
+    font-size: 2rem;
+    margin: 1rem;
+  }
+  &__submit {
+    border: 2px solid $teal;
+    box-shadow: 1px 1px 3px 1px #838383;
+    background-color: $teal;
+    color: white;
+    margin: 2rem auto;
+    padding: 1rem;
+    border-radius: 0.3rem;
+    font-size: 1.5rem;
+  }
+}
+
+.form-section {
+  @include flex(column, center, flex-start);
+  position: relative;
+  width: 90%;
+  padding: 2rem;
+  padding-top: 3rem;
+  margin: 0 auto;
+  margin-top: 2rem;
+  border: solid 1px #838383;
+  border-radius: 1rem;
+  &__title {
+    position: absolute;
+    top: -1rem;
+    padding: 0 1rem;
+    background-color: white;
+    font-size: 1.6rem;
+  }
+}
+
+input[type="text"],
+input[type="email"],
+input[type="number"],
+input[type="tel"] {
+  width: 100%;
+  height: 2.5rem;
+  border: none;
+  border-bottom: 1px solid #d6d6d6;
+  // border-radius: 0.5rem;
+  &:focus-within,
+  &:focus {
+    outline: none;
+    border-bottom: 2px solid $teal;
+  }
+  input[type="number"] {
+    width: 20rem;
+  }
+}
+
+input[type="radio"] {
+  position: absolute;
+  left: -1000%;
+  &:checked + label.label__frequency-label {
+    border: 2px solid $teal;
+    box-shadow: 1px 1px 3px 1px #838383;
+    background-color: $teal;
+    color: white;
+  }
+}
+
+.form-label {
+  margin-top: 1rem;
+  font-size: 1.2rem;
+  font-weight: 700;
+  &.label__frequency-label {
+    margin-right: 1rem;
+    margin-bottom: 2rem;
+    padding: 0.5rem;
+    border: 2px solid #d6d6d6;
+    border-radius: 0.5rem;
+    transition: all ease-in-out 500ms;
+  }
+}
