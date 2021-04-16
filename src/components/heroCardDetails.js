@@ -9,7 +9,6 @@ import axios from "axios";
 const HeroCardDetails = ({ hero, reveal, index }) => {
 	const [marvelHeroDetails, setMarvelHeroDetails] = useState("");
 	useEffect(() => {
-		// let mounted = true;
 		var time = Date.now();
 		const privateKey = process.env.REACT_APP_MARVEL_PRIVATE_KEY;
 		const publicKey = process.env.REACT_APP_MARVEL_PUBLIC_KEY;
@@ -24,9 +23,6 @@ const HeroCardDetails = ({ hero, reveal, index }) => {
 			.catch(err => {
 				return console.log(err);
 			});
-		return () => {
-			// mounted = false;
-		};
 	}, [hero.id]);
 
 	if (marvelHeroDetails) {
