@@ -10,7 +10,7 @@ const Layout = props => {
 		<>
 			<Head title={title} />
 			<Header page={page} />
-			<main className={`siteContent ${page}`} id={id}>
+			<main className={`siteContent ${page || ""}`} id={id}>
 				{children}
 			</main>
 			<Footer />
