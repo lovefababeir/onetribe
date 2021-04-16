@@ -3,15 +3,14 @@
 @import "../styles/variables.scss";
 
 .intro {
-  height: calc(100vh - #{$header + $footer});
-  width: 100vw;
-  margin-bottom: 6rem;
-  max-width: 100rem;
-  margin: 0 auto 6rem auto;
-  max-height: 90rem;
-  min-height: calc(60rem - #{$header + $footer});
-  @include flex(column, space-between, center);
-  @include surface {
-    min-height: 70rem;
-  }
+	height: calc(100vh - #{$header + $footer});
+	width: 100vw;
+	min-height: calc(60rem - #{$header + $footer});
+	max-height: 90rem;
+	max-width: 100rem;
+	margin: 0 auto 6rem auto;
+	@include flex(column, space-between, center);
+	@include surface {
+		min-height: 70rem;
+	}
 }
