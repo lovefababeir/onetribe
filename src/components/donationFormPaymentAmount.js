@@ -37,9 +37,6 @@ const DonationFormPaymentAmount = () => {
 				/>
 				{list && (
 					<select className="payment__currency-list" required>
-						<option value="" readOnly>
-							Select Currency
-						</option>
 						<option value="USD" defaultValue>
 							USD
 						</option>
