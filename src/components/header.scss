@@ -3,41 +3,41 @@
 @import "../styles/variables.scss";
 
 .header {
-  height: $header;
-  width: 100vw;
-  backdrop-filter: blur(20rem);
-  position: fixed;
-  top: 0;
-  z-index: 2;
-  @include flex(row, space-between, center);
-  &__logo {
-    font-size: 3rem;
-    color: $yellow;
-    margin-left: 1rem;
-  }
+	height: $header;
+	width: 100vw;
+	backdrop-filter: blur(20rem);
+	position: fixed;
+	top: 0;
+	z-index: 2;
+	@include flex(row, space-between, center);
+	&__logo {
+		font-size: 3rem;
+		color: $yellow;
+		margin-left: 1rem;
+	}
 }
 .menu {
-  width: fit-content;
-  max-width: 30rem;
-  margin: 0 1rem;
-  &__list {
-    height: $header;
-    @include flex(row, space-around, center);
-    list-style-type: none;
-  }
-  &__listItem {
-    font-size: 1.6rem;
-    color: white;
-    @include surface {
-      font-size: 2rem;
-    }
+	width: fit-content;
+	max-width: 30rem;
+	margin: 0 1rem;
+	&__list {
+		height: $header;
+		@include flex(row, space-around, center);
+		list-style-type: none;
+	}
+	&__listItem {
+		font-size: 1.4rem;
+		color: black;
+		@include surface {
+			font-size: 1.8rem;
+		}
 
-    &.button {
-      width: 8rem;
-      height: 2.5rem;
-      @include surface {
-        height: 3rem;
-      }
-    }
-  }
+		&.button {
+			width: 8rem;
+			height: 2.5rem;
+			@include surface {
+				height: 3rem;
+			}
+		}
+	}
 }
