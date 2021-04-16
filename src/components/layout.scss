@@ -3,20 +3,20 @@
 @import "../styles/variables.scss";
 
 .siteContent {
-  padding-top: $header;
-  padding-bottom: $footer;
-  width: 100vw;
-  @include flex(column, center, center);
-  &::before {
-    content: "";
-    position: fixed;
-    top: 0;
-    height: 100vh;
-    z-index: -1;
-    width: 100vw;
-    background-color: #444444;
-    background-image: url("../assets/images/bg.jpg");
-    background-size: cover;
-    background-position: center;
-  }
+	padding-top: $header;
+	padding-bottom: $footer;
+	width: 100vw;
+	@include flex(column, center, center);
+	&::before {
+		content: "";
+		position: fixed;
+		top: 0;
+		height: 100vh;
+		z-index: -1;
+		width: 100vw;
+		background-color: #3c726b;
+		background-image: url("../assets/images/bg.jpg");
+		background-size: cover;
+		background-position: center;
+	}
 }
