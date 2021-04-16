@@ -1,6 +1,5 @@
 import React from "react";
 import "../components/heroesLineup.scss";
-import { v4 as uuidv4 } from "uuid";
 
 const HeroesLineup = props => {
 	const { showSuperHero, showHero, showPeople, list, list2 } = props;
@@ -14,7 +13,8 @@ const HeroesLineup = props => {
 			{list.map((hero, i) => {
 				return (
 					<img
-						key={uuidv4()}
+						//used pic path as id because uuid disrupts the transition of the images
+						key={hero.picture}
 						src={hero.picture}
 						className="heroes__pictures"
 						alt={hero.hero}
@@ -30,6 +30,7 @@ const HeroesLineup = props => {
 							}`,
 							zIndex: `${i % 2}`,
 							transofrmStyle: "preserve-3d",
+							transition: "all 500ms ease-in",
 						}}
 					/>
 				);
@@ -38,7 +39,8 @@ const HeroesLineup = props => {
 			{list2.map((hero, i) => {
 				return (
 					<img
-						key={uuidv4()}
+						//used pic path as id because uuid disrupts the transition of the images
+						key={hero.picture}
 						src={hero.picture}
 						className="heroes__pictures"
 						alt={hero.alt}
@@ -48,6 +50,7 @@ const HeroesLineup = props => {
 							opacity: `${showPeople ? "1" : "0"}`,
 							transform: `translateZ(4rem)`,
 							transofrmStyle: "preserve-3d",
+							transition: "all 500ms ease-in",
 						}}
 					/>
 				);
