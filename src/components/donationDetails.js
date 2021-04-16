@@ -1,6 +1,6 @@
 import React from "react";
 import "./donationDetails.scss";
-import onetribe from "../assets/images/#ONETRIBE.png";
+// import onetribe from "../assets/images/#ONETRIBE.png";
 
 const DonationDetails = () => {
 	return (
