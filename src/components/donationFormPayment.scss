@@ -3,32 +3,55 @@
 @import "../styles/variables.scss";
 
 .payment__currency-list {
-  border: 2px solid #d6d6d6;
-  border-radius: 0.5rem;
-  height: 2.5rem;
-  margin-right: 1.5rem;
+	border: 2px solid #d6d6d6;
+	border-radius: 0.5rem;
+	height: 2.5rem;
+	font-size: 1.1rem;
+	margin-left: 0.5rem;
+	@include surface {
+		font-size: 1.6rem;
+	}
 }
 
 .ccInfo {
-  & > div {
-    margin: 1rem auto 0 auto;
-  }
-  &__input {
-    width: 100%;
-    border: 1px solid #d6d6d6;
-    & > img {
-      height: 1.4rem;
-    }
-    & > label {
-      font-size: 1.5rem;
-    }
-  }
+	width: 100%;
+	& > div {
+		margin: 1rem auto 0 auto;
+		width: 100%;
+	}
+	& div.rccs__card {
+		width: 70vw;
+		height: calc(0.62 * 70vw);
+		@include surface {
+			width: 29rem;
+			height: 18.2873rem;
+		}
+	}
+	& div.rccs__number {
+		font-size: 1.7rem;
+		@include surface {
+			font-size: 2rem;
+		}
+	}
+	&__input {
+		width: 100%;
+		border: 1px solid #d6d6d6;
+		& > img {
+			height: 1.4rem;
+		}
+		& > label {
+			font-size: 1.1rem;
+			@include surface {
+				font-size: 1.5rem;
+			}
+		}
+	}
 }
 
 #amount {
-  margin-left: 1rem;
-  width: fit-content;
+	margin-left: 1rem;
+	width: fit-content;
 }
 .form-label--amount {
-  margin-top: 2rem;
+	margin-top: 2rem;
 }
