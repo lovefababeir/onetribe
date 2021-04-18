@@ -32,7 +32,10 @@ const HeroCardDetails = ({ hero, reveal, index }) => {
 				<div>
 					<h1 className="hero__heroName">{name}</h1>
 					{hero.name && <h2 className="hero__name">{hero.name}</h2>}
-					<p className="hero__description">{description || hero.description}</p>
+					<div className="hero__description-box">
+						<p className="hero__description">{description || hero.description}</p>
+						<p className="hero__quote">{hero.reason}</p>
+					</div>
 					<span className="cta__box">
 						<Link to="/donate">
 							<h4 className="cta__support button">Support {hero.usedName}</h4>
