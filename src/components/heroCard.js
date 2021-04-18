@@ -10,7 +10,7 @@ const HeroCard = ({ hero, index }) => {
 	const updatePosition = () => {
 		const cardYPos = window.document.getElementById(cardId).offsetTop;
 		const cardHeight = window.document.getElementById(cardId).offsetHeight;
-		if (window.pageYOffset > cardYPos - cardHeight / 2) {
+		if (window.pageYOffset > cardYPos - cardHeight / 3) {
 			setTimeout(setAnimation(true), 500);
 		}
 	};
