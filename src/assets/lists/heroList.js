@@ -33,6 +33,8 @@ export const superHeroList = [
 		heroName: "Iron Man",
 		name: "Tony Stark",
 		usedName: "Tony",
+		reason:
+			"Even without the suit he's a Genius, billionaire, playboy(family man), philanthropist.",
 		pictureTransparent: {
 			slug: "ironman.png",
 			img: ironMan,
@@ -45,6 +47,8 @@ export const superHeroList = [
 		usedName: "Nat",
 		description:
 			"Trusted by some and feared by most, the Black Widow strives to make up for the bad she had done in the past by helping the world, even if that means getting her hands dirty in the process. Despite super spy Natasha Romanoff’s checkered past, she became one of S.H.I.E.L.D.’s most formidable agents before joining the Avengers.",
+		reason:
+			"I Don't Judge People On Their Worst Mistakes. We All Have To Choose Between What The World Wants You To Be And Who You Are.",
 		pictureTransparent: {
 			slug: "blackWidow.png",
 			img: blackWidow,
@@ -55,6 +59,8 @@ export const superHeroList = [
 		heroName: "Thor",
 		name: "God of Thunder",
 		usedName: "Thor",
+		reason:
+			"He turned down the throne because he did not be a king but rather a protector.  He is worthy",
 		pictureTransparent: {
 			slug: "thor.png",
 			img: thor,
@@ -65,6 +71,8 @@ export const superHeroList = [
 		heroName: "Captain America",
 		name: "Steve Rogers",
 		usedName: "Steve",
+		reason: `
+			"I choose run toward my problems and not away from them. If I see a situation pointed south, I can't ignore it. Sometimes I wish I could." Steve is also worthy`,
 		pictureTransparent: {
 			slug: "captainAmerica.png",
 			img: captainAmerica,
@@ -75,6 +83,8 @@ export const superHeroList = [
 		heroName: "Black Panther",
 		name: "King T'Challa",
 		usedName: "T'Challa",
+		reason:
+			"I will not abandon someone to die, when I have the means to save his life.",
 		description:
 			"T’Challa is the king of the secretive and highly advanced African nation of Wakanda - as well as the powerful warrior known as the Black Panther. As the king of the African nation of Wakanda, T’Challa protects his people as the latest in a legacy line of Black Panther warriors.",
 		pictureTransparent: {
@@ -87,6 +97,7 @@ export const superHeroList = [
 		heroName: "Hulk",
 		name: "Bruce Banner",
 		usedName: "Bruce",
+		reason: "He's got 7 PhDs and is known as the strongest Avenger.",
 		pictureTransparent: {
 			slug: "hulk.png",
 			img: hulk,
@@ -97,6 +108,7 @@ export const superHeroList = [
 		heroName: "scarletWitch",
 		name: "Wanda Maximoff",
 		usedName: "Wanda",
+		reason: "",
 		description:
 			"Notably powerful, Wanda Maximoff has fought both against and with the Avengers, attempting to hone her abilities and do what she believes is right to help the world.",
 		pictureTransparent: {
@@ -109,6 +121,8 @@ export const superHeroList = [
 		heroName: "Hawk Eye",
 		name: "Clint Barton",
 		usedName: "Clint",
+		reason:
+			"Clint sees the best in people and is the reason why Nat and Wanda became avengers. Despite all that he has to live for, which is his wife and kids, he is still willing to give up his life for complete strangers.",
 		description:
 			"An expert marksman and fighter, Clint Barton puts his talents to good use by working for S.H.I.E.L.D. as a special agent. The archer known as Hawkeye also boasts a strong moral compass that at times leads him astray from his direct orders.",
 		pictureTransparent: {
@@ -120,6 +134,7 @@ export const superHeroList = [
 		id: "1009697",
 		heroName: "Vision",
 		usedName: "Vision",
+		reason: "He too is worthy",
 		pictureTransparent: {
 			slug: "vision.png",
 			img: vision,
