@@ -2,60 +2,95 @@
 @import "../styles/mixins.scss";
 @import "../styles/variables.scss";
 .hero {
-  & > div:nth-child(1) {
-    @include flex(column, center, center);
-    top: 6rem;
-    width: 100vw;
-    min-width: 27rem;
-    z-index: 1;
-    padding: 1rem 2rem;
-    border: solid 1px #838383;
-    box-shadow: 1px 1px 7px 2px #5e5e5e;
-    backdrop-filter: blur(3rem);
-    @include breakpoint(300px) {
-      margin-left: 2rem;
-      width: 50vw;
-    }
-  }
+	& > div:nth-child(1) {
+		@include flex(column, center, center);
+		top: 6rem;
+		width: 100vw;
+		min-width: 27rem;
+		z-index: 1;
+		padding: 1rem 2rem;
+		border: solid 1px #838383;
+		box-shadow: 1px 1px 7px 2px #5e5e5e;
+		backdrop-filter: blur(3rem);
 
-  &__heroName {
-    font-size: 3rem;
-    max-width: 40rem;
-    margin: 0 auto;
-    width: 100%;
-    color: $red;
-    @include tablet {
-      font-size: 5rem;
-    }
-  }
-  &__name,
-  &__description {
-    @extend .hero__heroName;
-    color: white;
-    margin: 0.5rem auto;
-    font-size: 1.3rem;
-    @include tablet {
-      font-size: 1.6rem;
-    }
-  }
-  &__name {
-    font-size: 1.4;
-    @include tablet {
-      font-size: 2rem;
-    }
-  }
+		@include breakpoint(300px) {
+			margin-left: 2rem;
+			width: 50vw;
+		}
+	}
+
+	&__heroName {
+		font-size: 3rem;
+		max-width: 40rem;
+		margin: 0 auto;
+		width: 100%;
+		color: $red;
+		@include tablet {
+			font-size: 5rem;
+		}
+	}
+	&__description-box {
+		position: relative;
+		&:hover > p:first-child {
+			transition: opacity 500ms ease-in-out;
+			opacity: 0;
+		}
+		&:hover > p:nth-child(2) {
+			transition: opacity 500ms ease-in-out 500ms;
+			opacity: 1;
+		}
+	}
+	&__name,
+	&__description {
+		@extend .hero__heroName;
+		color: white;
+		margin: 0.5rem auto;
+		font-size: 1.3rem;
+		transition: opacity 500ms ease-in-out 500ms;
+		@include tablet {
+			font-size: 1.6rem;
+		}
+	}
+	&__quote {
+		@extend .hero__heroName;
+		color: white;
+		margin: 0.5rem auto;
+		font-size: 1.3rem;
+		position: absolute;
+		top: 0;
+		left: 0;
+		opacity: 0;
+		transition: opacity 500ms ease-in-out;
+		@include tablet {
+			font-size: 1.6rem;
+		}
+	}
+	// &__description:hover {
+	// 	transition: opacity 500ms ease-in-out;
+	// 	opacity: 0;
+	// 	& + p {
+	// 		transition: opacity 500ms ease-in-out 500ms;
+	// 		opacity: 1;
+	// 	}
+	// }
+	&__name {
+		font-size: 1.4;
+		@include tablet {
+			font-size: 2rem;
+		}
+	}
 }
 
 .cta {
-  &__box {
-    @include flex(row, center, center);
-    width: 100%;
-  }
-  &__support,
-  &__nextHero {
-    width: 12rem;
-    @include tablet {
-      width: 14rem;
-    }
-  }
+	&__box {
+		@include flex(row, center, center);
+		width: 100%;
+	}
+	&__support,
+	&__nextHero {
+		width: 12rem;
+		@include tablet {
+			width: 14rem;
+		}
+	}
 }
