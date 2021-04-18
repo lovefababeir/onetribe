@@ -30,6 +30,7 @@
 		}
 	}
 	&__description-box {
+		@include flex(column, center, center);
 		position: relative;
 		&:hover > p:first-child {
 			transition: opacity 500ms ease-in-out;
@@ -57,22 +58,14 @@
 		margin: 0.5rem auto;
 		font-size: 1.3rem;
 		position: absolute;
-		top: 0;
-		left: 0;
+		align-self: center;
 		opacity: 0;
+		text-align: center;
 		transition: opacity 500ms ease-in-out;
 		@include tablet {
 			font-size: 1.6rem;
 		}
 	}
-	// &__description:hover {
-	// 	transition: opacity 500ms ease-in-out;
-	// 	opacity: 0;
-	// 	& + p {
-	// 		transition: opacity 500ms ease-in-out 500ms;
-	// 		opacity: 1;
-	// 	}
-	// }
 	&__name {
 		font-size: 1.4;
 		@include tablet {
