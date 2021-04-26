@@ -34,7 +34,7 @@ export const superHeroList = [
 		name: "Tony Stark",
 		usedName: "Tony",
 		reason:
-			"Even without the suit he's a Genius, billionaire, playboy(family man), philanthropist.",
+			"Even without the suit he's a Genius, billionaire, playboy(now family man), philanthropist.",
 		pictureTransparent: {
 			slug: "ironman.png",
 			img: ironMan,
@@ -47,8 +47,7 @@ export const superHeroList = [
 		usedName: "Nat",
 		description:
 			"Trusted by some and feared by most, the Black Widow strives to make up for the bad she had done in the past by helping the world, even if that means getting her hands dirty in the process. Despite super spy Natasha Romanoff’s checkered past, she became one of S.H.I.E.L.D.’s most formidable agents before joining the Avengers.",
-		reason:
-			"I Don't Judge People On Their Worst Mistakes. We All Have To Choose Between What The World Wants You To Be And Who You Are.",
+		reason: `"I Don't Judge People On Their Worst Mistakes. We All Have To Choose Between What The World Wants You To Be And Who You Are."`,
 		pictureTransparent: {
 			slug: "blackWidow.png",
 			img: blackWidow,
@@ -60,7 +59,7 @@ export const superHeroList = [
 		name: "God of Thunder",
 		usedName: "Thor",
 		reason:
-			"He turned down the throne because he did not be a king but rather a protector.  He is worthy",
+			"He turned down the throne because he did not be a king but rather a protector.  He is worthy!",
 		pictureTransparent: {
 			slug: "thor.png",
 			img: thor,
@@ -72,7 +71,7 @@ export const superHeroList = [
 		name: "Steve Rogers",
 		usedName: "Steve",
 		reason: `
-			"I choose run toward my problems and not away from them. If I see a situation pointed south, I can't ignore it. Sometimes I wish I could." Steve is also worthy`,
+			"I choose run toward my problems and not away from them. If I see a situation pointed south, I can't ignore it. Sometimes I wish I could." Steve is also worthy!`,
 		pictureTransparent: {
 			slug: "captainAmerica.png",
 			img: captainAmerica,
@@ -108,7 +107,8 @@ export const superHeroList = [
 		heroName: "scarletWitch",
 		name: "Wanda Maximoff",
 		usedName: "Wanda",
-		reason: "",
+		reason:
+			"Although misdirected in the beginning, Wanda always chooses to do what is right. After losing her brother who gave his life to save others, Wanda has commited to doing the same.",
 		description:
 			"Notably powerful, Wanda Maximoff has fought both against and with the Avengers, attempting to hone her abilities and do what she believes is right to help the world.",
 		pictureTransparent: {
@@ -134,7 +134,7 @@ export const superHeroList = [
 		id: "1009697",
 		heroName: "Vision",
 		usedName: "Vision",
-		reason: "He too is worthy",
+		reason: "He, too, is worthy!",
 		pictureTransparent: {
 			slug: "vision.png",
 			img: vision,
