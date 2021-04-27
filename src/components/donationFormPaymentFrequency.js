@@ -11,6 +11,7 @@ const DonationFormPaymentFrequency = ({ setDonationInfo, donationInfo }) => {
 				id="monthly"
 				checked={donationInfo.frequency === "monthly"}
 				onChange={() => setDonationInfo({ ...donationInfo, frequency: "monthly" })}
+				required
 			></input>
 			<label htmlFor="monthly" className="label__frequency-label form-label">
 				Monthly
