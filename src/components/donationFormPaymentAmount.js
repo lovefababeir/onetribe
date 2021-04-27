@@ -2,7 +2,7 @@ import React, { useState, useEffect } from "react";
 import { v4 as uuidv4 } from "uuid";
 import axios from "axios";
 
-const DonationFormPaymentAmount = () => {
+const DonationFormPaymentAmount = ({ setDonationInfo, donationInfo }) => {
 	const [list, setList] = useState([]);
 
 	useEffect(() => {
@@ -36,7 +36,14 @@ const DonationFormPaymentAmount = () => {
 					required
 				/>
 				{list && (
-					<select className="payment__currency-list" required>
+					<select
+						className="payment__currency-list"
+						value={donationInfo.currency}
+						onChange={e =>
+							setDonationInfo({ ...donationInfo, currency: e.target.value })
+						}
+						required
+					>
 						<option value="USD" defaultValue>
 							USD
 						</option>
