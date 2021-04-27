@@ -33,6 +33,10 @@ const DonationFormPaymentAmount = ({ setDonationInfo, donationInfo }) => {
 					className="payment__amount"
 					name="amount"
 					id="amount"
+					value={donationInfo.amount}
+					onChange={e =>
+						setDonationInfo({ ...donationInfo, amount: e.target.value })
+					}
 					required
 				/>
 				{list && (
