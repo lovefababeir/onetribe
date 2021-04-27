@@ -10,6 +10,7 @@ const DonationForm = () => {
 		fullName: "",
 		email: "",
 		amount: "",
+		currency: "",
 		frequency: "",
 		ccn: "",
 		expiry: "",
@@ -20,7 +21,7 @@ const DonationForm = () => {
 
 	const checkPayment = e => {
 		e.preventDefault();
-
+		// console.log(donationInfo);
 		const infoList = Object.keys(donationInfo);
 		const errors = [];
 		infoList.forEach(item => {
@@ -35,7 +36,7 @@ const DonationForm = () => {
 	};
 
 	return (
-		<form className="donation-form" onSubmit={checkPayment}>
+		<form className="donation-form" onSubmit={e => checkPayment(e)}>
 			<h1 className="donation-form__title">Make a Donation </h1>
 			<div className="form-section donorInfo">
 				<h2 className="form-section__title">Donor's Information</h2>
